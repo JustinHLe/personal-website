@@ -9,10 +9,6 @@ body {
   overflow-x:hidden;
 } 
 
-section{
-  height: 100vh;
-  width: 100vw;
-}
 .home, .exp, .contact{
   background-color: #E5E5E5
 }
@@ -26,6 +22,16 @@ section{
   background-repeat: no-repeat;
   position: relative;
   background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about{
+  height: auto;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px;
+}
+.abt-title-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #343434;
+}
+.abt-title{
+    font-size: 52px;
+    letter-spacing: 1px;
+    color: #343434;
+    font-weight: 800;
+}
+.abt-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.abt-second-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.abt-first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headshot{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px 16px -6px rgba(0,0,0,1);
+}
+.abt-paragraph{
+    font-size: 24px;
+    color: #343434;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 40px;
+    width: 500px;
+}
+.skills{
+    color: #343434;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.skills-list{
+    columns: 3;
+    width: 100%;
+    list-style-position: inside;
+    list-style-type:square;
+}
+.skill-item{
+    color: #343434;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.abt-title-mobile{
+    display: none;
+}
+.skills-mobile, .skills-list-mobile, .skills-item-mobile{
+    display: none
+}
+
+@media screen and (max-width: 1400px) {
+    .about-container{
+        margin: 140px 0;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .abt-paragraph{
+        font-size: 24px;
+        color: #343434;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 40px;
+        width: 600px;
+    }
+    .abt-first-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .headshot{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .skills{
+        width: 300px;
+        margin: 20px 0;
+    }
+    .skills-list{
+        columns: 2;
+        width: 275px;
+        white-space: nowrap;
+    }
+    .skill-item{
+        color: #343434;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .abt-paragraph{
+        font-size: 22px;
+        color: #343434;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 40px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .abt-second-section{
+        display: flex;
+        width: 400px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .abt-paragraph{
+        font-size: 22px;
+        color: #343434;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 40px;
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .abt-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .abt-second-section{
+        width: 90%;
+        align-items: center;
+    }
+    .abt-paragraph{
+        font-size: 16px;
+        color: #343434;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 40px;
+        width: 100%;
+    }
+    .abt-title-container{
+        display: none;
+    }
+    .skills{
+        display: none;
+    }
+    .skills-list{
+        display: none;
+    }
+    .abt-title-mobile{
+        display: flex;
+        color: #343434;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+    .skills-mobile{
+        display: flex;
+        color: #343434;
+    }
+    .skills-list-mobile{
+        display: block;
+        columns: 3;
+    }
+    .skill-item-mobile{
+        color: #343434;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+}
