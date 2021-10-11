@@ -8,3 +8,28 @@
 body {
   overflow-x:hidden;
 } 
+
+section{
+  height: 100vh;
+  width: 100vw;
+}
+.home, .exp, .contact{
+  background-color: #E5E5E5
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./img/bg-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .home{
+    background-attachment: scroll;
+  }
+}

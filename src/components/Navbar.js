@@ -22,9 +22,6 @@ export const Navbar = () => {
             </div>
             <ul className='list' id="nav-links">
                 <li className='list_item'>
-                    Home
-                </li>
-                <li className='list_item'>
                     About Me
                 </li>
                 <li className='list_item'>

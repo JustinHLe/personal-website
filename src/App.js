@@ -1,19 +1,23 @@
 import './App.css';
+import { Home } from './components/Home';
 import { Navbar } from './components/Navbar';
 function App() {
   return (
     <>
       <Navbar/>
-      <section className="About">
+      <section className="home">
+        <Home/>
+      </section>
+      <section className="about">
 
       </section>
-      <section className="Exp">
+      <section className="exp">
 
       </section>
-      <section className="Projects">
+      <section className="projects">
 
       </section>
-      <section className="Contact">
+      <section className="contact">
 
       </section>
     </>
