@@ -6,7 +6,10 @@ import '../styles/About.css'
 
 export const About = () => {
     useEffect(()=>{
-        Aos.init({ duration: 2000 })
+        Aos.init({ 
+            duration: 2000, 
+            once: true 
+        })
     },[])
     return(
         <div className="about-container">

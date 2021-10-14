@@ -9,7 +9,7 @@ body {
   overflow-x:hidden;
 } 
 
-.home, .exp, .contact{
+.home, .contact{
   background-color: #E5E5E5
 }
 .home{
@@ -33,9 +33,28 @@ body {
   overflow: hidden;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
-
+.exp{
+  height: auto;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #E5E5E5;
+}
+.img2{
+  height: 20vh;
+  width: 100vw;
+  background-image: url('./img/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
 @media screen and (max-width: 768px) {
   .home{
     background-attachment: scroll;
+  }
+  .img2{
+    display: none;
   }
 }
