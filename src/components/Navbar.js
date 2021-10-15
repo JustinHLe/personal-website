@@ -1,6 +1,6 @@
 import React from 'react' 
 import '../styles/Navbar.css'
-export const Navbar = () => {
+export const Navbar = ({aboutRef, expRef, projectRef, contactRef}) => {
     const navSlide = (e) => {
         const burger = document.getElementById('burger')
         const nav = document.getElementById("nav-links")
@@ -15,22 +15,52 @@ export const Navbar = () => {
         })
         burger.classList.toggle('toggle')
     }
+    const handleScroll = (e) => {
+        const navLink = e.target.innerText
+        if(navLink === "JL"){
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        }
+        if(navLink === "About Me"){
+            aboutRef.current.scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+        if(navLink === "Experience"){
+            expRef.current.scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+        if(navLink === "Projects"){
+            projectRef.current.scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+        if(navLink === "Contact"){
+            contactRef.current.scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+    }
     return(
         <div className='nav_container'>
             <div className='logo_container'>
-                <h1 className='logo'>JL</h1>
+                <h1 className='logo' onClick={handleScroll}>JL</h1>
             </div>
             <ul className='list' id="nav-links">
-                <li className='list_item'>
+                <li className='list_item' onClick={handleScroll}>
                     About Me
                 </li>
-                <li className='list_item'>
+                <li className='list_item' onClick={handleScroll}>
                     Experience
                 </li>
-                <li className='list_item'>
+                <li className='list_item' onClick={handleScroll}>
                     Projects
                 </li>
-                <li className='list_item'>
+                <li className='list_item' onClick={handleScroll}>
                     Contact
                 </li>
             </ul>

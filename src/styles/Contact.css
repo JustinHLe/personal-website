@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+.contact-container{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-title-container{
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+.contact-title{
+    display: flex;
+    color: #343434;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 350px;
+    justify-content: space-evenly;
+}
+
+.submit-btn{
+    color: #343434;
+}
+input{
+    outline: none;
+    border: none;
+    width: inherit;
+    height: 40px;
+    color: #343434;
+    padding: 10px;
+    border: 1px solid #343434;
+    border-radius: 4px;
+    box-shadow: 0px 2px 16px rgba(0, 24, 26, 0.12);
+}
+textarea{
+    outline: none;
+    border: 1px solid #343434;
+    border-radius: 4px;
+    width: inherit;
+    height: 150px;
+    color: #343434;
+    padding: 10px;
+    box-shadow: 0px 2px 16px rgba(0, 24, 26, 0.12);
+}
+input:focus{
+    border: 1px solid #A5C9FF;
+    box-shadow: 0px 4px 20px #A5C9FF;
+}
+textarea:focus{
+    border: 1px solid #A5C9FF;
+    box-shadow: 0px 4px 20px #A5C9FF;
+}
+.submit-btn{
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid #343434;
+    outline: none;
+    border-radius: 4px;
+}
+.submit-btn:hover{
+    background-color: #343434;
+    color:#FFFFFF;
+}
+.contact-links{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.github{
+    width: 70px;
+    height: 70px;
+    fill: #343434;
+    cursor: pointer;
+}
+.linkedin{
+    width: 70px;
+    height: 70px;
+    fill: #343434;
+    cursor: pointer;
+}
+.github:hover{
+    fill: #171515
+}
+.linkedin:hover{
+    fill: #0e76a8;
+}
+@media screen and (min-width: 768px) {
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 350px;
+        justify-content: space-evenly;
+    }
+    .contact-title{
+        font-size: 52px;
+    }
+}
