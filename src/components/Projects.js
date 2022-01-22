@@ -5,6 +5,8 @@ import {FaGithub} from 'react-icons/fa'
 
 export const Projects = () => {
     const discordRef = useRef(null)
+    const aimRef = useRef(null)
+    const morningRef = useRef(null)
     return(
         <div className="project-container">
             <div className="project-title-container">
@@ -37,8 +39,8 @@ export const Projects = () => {
                             </p>
                             <div className="project-btn-containers">
                                 {/* <div className="live-btn">See Live</div> */}
-                                <div className="source-btn" onClick={()=>discordRef.current.click()}>Source Code</div>
-                                <a style={{display: "none"}} href="https://github.com/JustinHLe/aim-trainer" target="_blank" rel='noreferrer noopener' ref={discordRef}></a>
+                                <div className="source-btn" onClick={()=>aimRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/aim-trainer" target="_blank" rel='noreferrer noopener' ref={aimRef}></a>
                             </div>
                         </div>
                         <div className="project-img">
@@ -52,8 +54,8 @@ export const Projects = () => {
                             </p>
                             <div className="project-btn-containers">
                                 {/* <div className="live-btn">See Live</div> */}
-                                <div className="source-btn" onClick={()=>discordRef.current.click()}>Source Code</div>
-                                <a style={{display: "none"}} href="https://github.com/JustinHLe/morning_bot" target="_blank" rel='noreferrer noopener' ref={discordRef}></a>
+                                <div className="source-btn" onClick={()=>morningRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/morning_bot" target="_blank" rel='noreferrer noopener' ref={morningRef}></a>
                             </div>
                         </div>
                         <div className="project-img">

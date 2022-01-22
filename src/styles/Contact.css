@@ -14,10 +14,11 @@ input[type="search"]::-webkit-search-results-decoration {
     width: auto;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
+    position: relative;
 }
 .contact-title-container{
-    margin-top: 140px;
+    margin-top: 70px;
     margin-bottom: 40px;
 }
 .contact-title{
@@ -103,6 +104,85 @@ textarea:focus{
 .linkedin:hover{
     fill: #0e76a8;
 }
+.email-popup-success{
+    position: absolute;
+    /* transform: translateY(69vh); */
+    top: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: rgba(34, 139, 34, 0.8);
+    animation: fadeIn 1s ease-in-out;
+}
+.email-popup-hidden-success{
+    position: absolute;
+    /* transform: translateY(90vh); */
+    top: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;    
+    display: flex;
+    border-radius: 5px;
+    padding: 0 20px;
+    background-color: rgb(34, 139, 34);
+    opacity: 0;
+    animation: fadeOut 1s ease-in-out;
+}
+.email-popup{
+    position: absolute;
+    /* transform: translateY(69vh); */
+    top: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: rgba(236, 10, 10, 0.80);
+    animation: fadeIn 1s ease-in-out;
+}
+.email-popup-hidden{
+    position: absolute;
+    /* transform: translateY(90vh); */
+    top: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;    
+    display: flex;
+    border-radius: 5px;
+    padding: 0 20px;
+    background-color: rgb(236, 10, 10);
+    opacity: 0;
+    animation: fadeOut 1s ease-in-out;
+}
+.error-message{
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 5px;
+    font-size: 12px;
+    background-color: rgba(28, 124, 28, 0);
+}
+.popup-icon{
+    width: 25px;
+    height: 25px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: .80
+    }
+    top {
+        opacity: 0
+    }
+}
 @media screen and (min-width: 768px) {
     .contact-form{
         display: flex;
@@ -110,6 +190,13 @@ textarea:focus{
         width: 500px;
         height: 350px;
         justify-content: space-evenly;
+    }
+    .error-message{
+        font-weight: 400;
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 5px;
+        font-size: 16px;
+        background-color: rgba(28, 124, 28, 0);
     }
     .contact-title{
         font-size: 52px;
