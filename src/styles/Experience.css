@@ -138,7 +138,7 @@
         width: 500px;
     }
     .exp-img-container{
-        display: flex;
+        display: flex;  
         position: absolute;
         right: 110%;
         width: 150px;
@@ -148,6 +148,10 @@
     }
     .exp-img-container > img{
         object-fit: contain;
+    }
+    .onnn3{
+        width: 150px;
+        height: 150px;
     }
     .exp-card:hover{
         box-shadow: 0px 2px 16px rgba(0, 24, 26, 0.75);

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import '../styles/Projects.css'
 import discord from '../img/discord.png'
+import {FaGithub} from 'react-icons/fa'
+
 export const Projects = () => {
+    const discordRef = useRef(null)
     return(
         <div className="project-container">
             <div className="project-title-container">
@@ -17,12 +20,44 @@ export const Projects = () => {
                                 details.
                             </p>
                             <div className="project-btn-containers">
-                                <div className="live-btn">See Live</div>
-                                <div className="source-btn">Source Code</div>
+                                {/* <div className="live-btn">See Live</div> */}
+                                <div className="source-btn" onClick={()=>discordRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/discord-bot" target="_blank" rel='noreferrer noopener' ref={discordRef}></a>
                             </div>
                         </div>
                         <div className="project-img">
                             <img src={discord} alt="discord"></img>
+                        </div>
+                    </li>
+                    <li className="project">
+                        <div className="project-description-container">
+                            <h1 className="project-header">Aim Trainer</h1>
+                            <p className="project-desc">Browser "Aim Trainer" game built with React.js and Express. Includes SQL database hosted on Microsoft SQL server.
+                            Database holds user information including player name and their score.
+                            </p>
+                            <div className="project-btn-containers">
+                                {/* <div className="live-btn">See Live</div> */}
+                                <div className="source-btn" onClick={()=>discordRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/aim-trainer" target="_blank" rel='noreferrer noopener' ref={discordRef}></a>
+                            </div>
+                        </div>
+                        <div className="project-img">
+                        <FaGithub className="github"/>
+                        </div>
+                    </li>
+                    <li className="project">
+                        <div className="project-description-container">
+                            <h1 className="project-header">Morning Bot</h1>
+                            <p className="project-desc">Bot that sends automated messages to Microsoft Teams
+                            </p>
+                            <div className="project-btn-containers">
+                                {/* <div className="live-btn">See Live</div> */}
+                                <div className="source-btn" onClick={()=>discordRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/morning_bot" target="_blank" rel='noreferrer noopener' ref={discordRef}></a>
+                            </div>
+                        </div>
+                        <div className="project-img">
+                        <FaGithub className="github"/>
                         </div>
                     </li>
                 </ul>

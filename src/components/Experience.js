@@ -61,7 +61,7 @@ export const Experience = () => {
                         <li  data-aos="fade-left"  className="exp-card">
                                     <div className="card-data">
                                     <div className="exp-img-container">
-                                            <img src={sano} alt = "applied"/>
+                                            <img src={sano} alt = "sano"/>
                                         </div>
                                         <h1 className="job-title">Frontend Developer</h1>
                                         <h3 className="job-place">SanoMind</h3>
@@ -107,7 +107,7 @@ export const Experience = () => {
                         <li data-aos="fade-left"  className="exp-card">
                                 <div className="card-data">
                                     <div className="exp-img-container">
-                                            <img src={onnn3} alt = "applied"/>
+                                            <img src={onnn3} className="onnn3" alt = "onnn3"/>
                                         </div>
                                     <h1 className="job-title">SWE Intern</h1>
                                     <h3 className="job-place">Onnn3</h3>
@@ -142,7 +142,7 @@ export const Experience = () => {
                         <li data-aos="fade-left"  className="exp-card">
                                 <div className="card-data">
                                         <div className="exp-img-container">
-                                            <img src={ucr} alt = "applied"/>
+                                            <img src={ucr} alt = "ucr"/>
                                         </div>
                                     <h1 className="job-title">Undergraduate</h1>
                                     <h3 className="job-place">University of Californa, Riverside</h3>
