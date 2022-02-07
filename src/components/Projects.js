@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import '../styles/Projects.css'
 import discord from '../img/discord.png'
 import {FaGithub} from 'react-icons/fa'
-
+import faceit from '../img/faceit.png'
 export const Projects = () => {
     const discordRef = useRef(null)
     const aimRef = useRef(null)
@@ -60,6 +60,22 @@ export const Projects = () => {
                         </div>
                         <div className="project-img">
                         <FaGithub className="github"/>
+                        </div>
+                    </li>
+                    <li className="project">
+                        <div className="project-description-container">
+                            <h1 className="project-header">Faceit API</h1>
+                            <p className="project-desc">Application built with MaterialUI and Typescript with the purpose of exploring Faceit's API. 
+                            Displays the top CS:GO players in the US region and allows user to search and view player statistics.
+                            </p>
+                            <div className="project-btn-containers">
+                                {/* <div className="live-btn">See Live</div> */}
+                                <div className="source-btn" onClick={()=>morningRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/faceitAPI" target="_blank" rel='noreferrer noopener' ref={morningRef}></a>
+                            </div>
+                        </div>
+                        <div className="project-img">
+                        <img src={faceit} alt="faceit"></img>
                         </div>
                     </li>
                 </ul>
