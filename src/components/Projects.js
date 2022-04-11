@@ -3,11 +3,13 @@ import '../styles/Projects.css'
 import discord from '../img/discord.png'
 import {FaGithub} from 'react-icons/fa'
 import faceit from '../img/faceit.png'
+import monkey from '../img/monkey.png'
 export const Projects = () => {
     const discordRef = useRef(null)
     const aimRef = useRef(null)
     const morningRef = useRef(null)
     const faceitRef = useRef(null)
+    const discordScript = useRef(null)
     return(
         <div className="project-container">
             <div className="project-title-container">
@@ -79,6 +81,23 @@ export const Projects = () => {
                         </div>
                         <div className="project-img">
                         <img src={faceit} alt="faceit"></img>
+                        </div>
+                    </li>
+
+                    <li className="project">
+                        <div className="project-description-container">
+                            <h1 className="project-header">Violent Monkey Script</h1>
+                            <p className="project-desc">Violent monkey is an open source userscript manager. This script will trigger if the user opens discord on the Browser
+                            and will query all members of a discord server and return their ids. 
+                            </p>
+                            <div className="project-btn-containers">
+                                {/* <div className="live-btn">See Live</div> */}
+                                <div className="source-btn" onClick={()=>discordScript.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/ViolentMonkeyScript" target="_blank" rel='noreferrer noopener' ref={discordScript}></a>
+                            </div>
+                        </div>
+                        <div className="project-img">
+                        <img src={monkey} alt="monkey"></img>
                         </div>
                     </li>
                 </ul>
