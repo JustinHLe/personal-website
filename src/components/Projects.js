@@ -7,6 +7,7 @@ export const Projects = () => {
     const discordRef = useRef(null)
     const aimRef = useRef(null)
     const morningRef = useRef(null)
+    const faceitRef = useRef(null)
     return(
         <div className="project-container">
             <div className="project-title-container">
@@ -63,7 +64,7 @@ export const Projects = () => {
                         </div>
                     </li>
 
-                    
+
                     <li className="project">
                         <div className="project-description-container">
                             <h1 className="project-header">Faceit API</h1>
@@ -72,8 +73,8 @@ export const Projects = () => {
                             </p>
                             <div className="project-btn-containers">
                                 {/* <div className="live-btn">See Live</div> */}
-                                <div className="source-btn" onClick={()=>morningRef.current.click()}>Source Code</div>
-                                <a style={{display: "none"}} href="https://github.com/JustinHLe/faceitAPI" target="_blank" rel='noreferrer noopener' ref={morningRef}></a>
+                                <div className="source-btn" onClick={()=>faceitRef.current.click()}>Source Code</div>
+                                <a style={{display: "none"}} href="https://github.com/JustinHLe/faceitAPI" target="_blank" rel='noreferrer noopener' ref={faceitRef}></a>
                             </div>
                         </div>
                         <div className="project-img">
