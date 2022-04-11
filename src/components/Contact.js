@@ -38,7 +38,7 @@ export const Contact = ({contactRef}) => {
             setTimeout(()=>{
                 setSent(false)
             }, 5000)
-            emailjs.sendForm('service_4qmex9w', 'template_ljce4a8', e.target, 'user_Ny7PV7c1AEf1qkifuiMJp')
+            emailjs.sendForm('service_89c3nkb', 'template_ljce4a8', e.target, 'user_Ny7PV7c1AEf1qkifuiMJp')
             .then((result) => {
                console.log(result)
             }, (error) => {
