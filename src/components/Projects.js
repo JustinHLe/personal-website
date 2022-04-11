@@ -62,6 +62,8 @@ export const Projects = () => {
                         <FaGithub className="github"/>
                         </div>
                     </li>
+
+                    
                     <li className="project">
                         <div className="project-description-container">
                             <h1 className="project-header">Faceit API</h1>
